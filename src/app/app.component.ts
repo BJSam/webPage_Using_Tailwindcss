@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {faFacebookSquare, faInstagram, faTwitterSquare} from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FinalProj';
+  fbIcon= faFacebookSquare;
+  instaIcon = faInstagram;
+  twitterIcon = faTwitterSquare;
 }

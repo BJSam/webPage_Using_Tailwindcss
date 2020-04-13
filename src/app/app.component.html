@@ -105,14 +105,14 @@
               <img class="w-auto h-3 self-center px-3" src="../assets/images/icon-phone.svg" alt="icon-phone">
               <h1>Phone:+1-543-123-4567</h1>
               </div>
-              <div class="flex flex-row  cursor-pointer">
+              <div class="flex flex-row  cursor-pointer" onclick="javascript:location.href='mailto:someone@example.com?Subject=Hello'">
                   <img class="w-auto self-center h-3 px-3" src="../assets/images/icon-email.svg" alt="icon-email">
               <h1>example@huddle.com</h1>
               </div>
               <div class="flex flex-row py-3 mb:invisible">
-                  <i class="fab cursor-pointer fa-facebook-square mx-3"></i>
-                  <i class="fab cursor-pointer fa-instagram "></i>
-                  <i class="fab cursor-pointer fa-twitter-square mx-3"></i>
+                  <fa-icon class="cursor-pointer mx-3" onclick="window.open('https://www.fb.com', '_blank');" [icon]="fbIcon"></fa-icon>
+                  <fa-icon class="cursor-pointer" onclick="window.open('https://www.instagram.com', '_blank');" [icon]="instaIcon"></fa-icon>
+                  <fa-icon class="cursor-pointer mx-3" onclick="window.open('https://www.twitter.com', '_blank');" [icon]="twitterIcon"></fa-icon>
               </div>
           </span>
 
